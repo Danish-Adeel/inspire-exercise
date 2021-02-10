@@ -19,7 +19,7 @@ const Home = () => {
     return (
 
         <Container py='10' maxWidth='3xl'>
-            <Heading as="h2" size="3xl" >
+            <Heading as="h2" size="3xl" textAlign='center' mb='8' >
                 Total Items: {appState.repos?.length}
             </Heading>
 

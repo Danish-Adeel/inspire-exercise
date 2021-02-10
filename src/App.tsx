@@ -2,6 +2,7 @@ import React from 'react';
 import { ChakraProvider, Container } from "@chakra-ui/react"
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from './Pages/Home'
+import ItemView from './Pages/ItemView'
 
 function App() {
   return <ChakraProvider>
@@ -9,6 +10,9 @@ function App() {
       <Router >
         <Route exact path='/'>
           <Home />
+        </Route>
+        <Route path='/item/:repoId'>
+          <ItemView />
         </Route>
       </Router>
 

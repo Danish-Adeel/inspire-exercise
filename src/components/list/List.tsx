@@ -1,4 +1,4 @@
-import { Box, Heading, Stack, Text } from '@chakra-ui/react';
+import { Stack } from '@chakra-ui/react';
 import React from 'react'
 import ListItemView from "../listitem/ListItemView";
 
