@@ -5,7 +5,7 @@ import ListItemView from "../listitem/ListItemView";
 const List = (props: any) => {
     const { repos } = props;
 
-    if (!repos || repos.length === 0) return <p>No items Sorry</p>
+    if (!repos || repos.length === 0) return <p>No Items Sorry</p>
 
     return (
         <Stack spacing='5'>

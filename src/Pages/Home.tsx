@@ -1,4 +1,3 @@
-
 import { Container, Heading } from "@chakra-ui/react"
 import React, { useEffect, useState } from 'react';
 import List from '../components/list/List'
@@ -14,12 +13,11 @@ const Home = () => {
             .then((res) => res.json())
             .then((repos) => { setAppState({ repos: repos.hits.hits }) })
     }, [setAppState])
-    console.log(appState)
 
     return (
 
         <Container py='10' maxWidth='3xl'>
-            <Heading as="h2" size="3xl" textAlign='center' mb='8' >
+            <Heading as="h3" size="2xl" textAlign='center' mb='8' >
                 Total Items: {appState.repos?.length}
             </Heading>
 
