@@ -1,6 +1,7 @@
 
 import { Container, Heading } from "@chakra-ui/react"
 import React, { useEffect, useState } from 'react';
+import List from '../components/list/List'
 
 
 
@@ -22,6 +23,7 @@ const Home = () => {
                 Total Items: {appState.repos?.length}
             </Heading>
 
+            <List repos={appState.repos} />
 
 
         </Container>
